@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    font-family: cursive;
+    background-color: rgb(208, 191, 225);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgb (0,0,0,0.1);
+}
+
+header{
+background: linear-gradient(to right,#d9aee8,#9e52db);
+color: rgb(13, 11, 11);
+text-align:center;
+padding: 60px 20px;
+box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+header h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color:rgb(232, 231, 238)
+}
+footer{
+background-color: #af90f3;
+color:rgb(75, 71, 66);
+padding: 30px 20px; 
+text-align:center;
+border-top: 5px solid #c8b8d5;
+}
+footer h4{
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h1{
+    color: rgb(24, 20, 27);
+}
+
+h2{
+    color: rgba(255, 255, 255, 0.97);
+}
+table{
+    width:  60%; 
+    margin:auto; 
+    border-collapse: collapse;
+    box-shadow:0 4px 12px  #af90f3(0,0,0,0.1);
+    background-color: rgb(168, 109, 224);
+    border-radius: 8px;
+    overflow: hidden;   
+}
+th,td{
+    padding: 14px 2px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+thead th {
+    background-color: #d6c3f3;
+color: rgb(23, 1, 38);
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+dl{
+    width: 70%;
+    margin: auto;
+    background:rgb(212, 157, 224);
+}
+dt{
+font-size: 1.4em;
+font-weight: bold;
+color:#1d1c1e;
+position: relative;
+padding-left: 25px;
+
+}
+dt::before{
+    content: "♡"; 
+    position: absolute;
+    left: 0;
+
+}
+dd{
+margin: 10px 0 20px 25px;
+font-size: 1em;
+line-height: 1.5;
+    background-color: #d6c3f3;
+ padding: 10px 15px ;
+ border-radius: 8px;
+ border-left: 4px solid #9e52db;
+
+}
+dd:first-of-type {
+font-style: italic;
+color:#000000f5;
+}
+tbody th{
+    font-weight: normal;
+    color: rgb(179, 197, 19);
+}
+img{
+    display: block;
+margin: 5px auto;
+border-radius: 12px;
+box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+caption{
+    caption-side: top;
+    padding: 10px;
+    font-size: 1.6em;
+    font-weight: bold; 
+    color:#1d1c1e
+}
+tbody tr:hover{
+    background-color:#931cab
+}
+tbody tr:hover {
+background-color: #b70b0bb7;
+}
