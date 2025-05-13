@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', cursive;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  
+    background: linear-gradient(rgba(255, 230, 240, 0.9), rgba(255, 240, 250, 0.9)),
+                url('c0e495a3-30d9-4496-8985-cd5aeb0126ba.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: backgroundZoom 18s ease-in-out infinite alternate;
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+  }
+
+  @keyframes backgroundZoom {
+    from { background-size: 100%; }
+    to { background-size: 105%; }
+  }
+  
+  h1 {
+    color: #d294c3;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+    animation: fadeInDown 1s ease-out;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    background: linear-gradient(to right, #d294c3, #c27ba0);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .floating-flowers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .floating-flowers .flower {
+    position: absolute;
+    font-size: 2rem;
+    color: #ffb6c1;
+    animation: floatFlower 10s linear infinite;
+    opacity: 0.6;
+  }
+  
+  .floating-flowers .flower:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+  }
+  
+  .floating-flowers .flower:nth-child(2) {
+    left: 40%;
+    animation-delay: 3s;
+  }
+  
+  .floating-flowers .flower:nth-child(3) {
+    left: 70%;
+    animation-delay: 1.5s;
+  }
+  
+  .floating-flowers .flower:nth-child(4) {
+    left: 85%;
+    animation-delay: 2.5s;
+  }
+  
+  @keyframes floatFlower {
+    0% {
+      top: -10%;
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.2);
+    }
+    100% {
+      top: 110%;
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  
+  .form-container {
+    position: relative;
+    width: 100%;
+    max-width: 620px;
+    background: rgba(255, 245, 250, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(190, 140, 200, 0.3);
+    backdrop-filter: blur(10px);
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+    opacity: 0;
+    overflow: hidden;
+    border: 2px solid #ffb6c1;
+  }
+  
+  .form-container::before,
+  .form-container::after {
+    content: "✿";
+    position: absolute;
+    font-size: 2.5rem;
+    color: #a43647;
+    opacity: 0.2;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .form-container::before {
+    top: 10px;
+    left: 15px;
+  }
+  
+  .form-container::after {
+    bottom: 10px;
+    right: 15px;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  h2 {
+    text-align: center;
+    color: #cc3399;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.8em;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #993366;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #e0b3d0;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    font-size: 1em;
+    background-color: #fff7fb;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #cc66cc;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.7);
+    transform: scale(1.03);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #f8a1c4, #cc66ff);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(200, 100, 220, 0.4);
+    animation: pulse 2.5s infinite ease-in-out;
+  }
+
+  button:hover {
+    background: linear-gradient(135deg, #ffb3d9, #d9b3ff);
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 10px 30px rgba(156, 158, 168, 0.5);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2.2em;
+    }
+  
+    .form-container {
+      padding: 25px 20px;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(255, 192, 203, 0.4);
+    }
+    50% {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px rgba(255, 192, 203, 0.7);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(255, 192, 203, 0.4);
+    }
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+  }

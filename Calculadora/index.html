@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora básica</title>
+</head>
+<body> 
+    //actividad de declaración de variables
+    <script>
+        let continuar=true;
+        while(continuar){
+        let numero1=parseFloat(prompt("ingrese el primer número:"));
+        let numero2=parseFloat(prompt("ingrese el segundo número:"));
+        let operador=prompt("ingrese el operador (+,-,*,/):salir o continuar");
+        if (operador.toLocaleLowerCase()=="salir"){
+            alert ("gracias por usar la calculadora");
+            salir=false;
+            break;
+        }
+    
+             //paso 2:función para realizar la operación
+        function realizaroperación(numero1,numero2,operador){
+            if(operador=="+"){
+                return numero1+numero2;
+            }else if(operador=="-"){
+                return numero1-numero2;
+            }else if(operador=="*"){
+                return numero1*numero2;
+            }else if (operador=="/"){  
+                //paso 3:validar si el segundo número es distinto de 0
+                if(numero2==0){
+                    return"error:no se puede dividir entre 0";
+                }
+                    return numero1/numero2;
+            }else{
+                return "error:operador no válido";
+            }
+        }
+        //ejcuta y ostrar el resultado:
+        let resultado=realizaroperación(numero1,numero2,operador);
+alert ("el resultado de la operacion es:" + resultado);
+
+    }
+    </script>
+</body>
+</html>

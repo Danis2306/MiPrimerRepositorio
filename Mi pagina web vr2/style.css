@@ -1,0 +1,168 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #ffe6f0, #e26991);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header, footer {
+background-color: hsl(330, 67%, 73%);
+padding: 25px 20px;
+border-radius: 200px;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+text-align: center;
+margin-bottom: 30px;
+transition: transform 0.5s ease;
+}
+
+header:hover, footer:hover {
+transform: scale(1.02);
+}
+
+img {
+display: block;
+margin: 30px auto;
+border-radius: 20px;
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+transition: transform 0.4s ease;
+width: 320px;
+height: 320px;
+object-fit: cover;
+}
+
+img:hover {
+transform: scale(1.05);
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 30px 0;
+background-color: #fff;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+animation: fadeIn 1s ease;
+}
+caption {
+font-size: 1.3rem;              
+font-weight: bold;          
+color: #b30059;               
+text-transform: uppercase;     
+letter-spacing: 1px;           
+background-color: #ffe6f0;   
+padding: 10px;
+border-radius: 10px;
+margin-bottom: 10px;
+text-align: center;
+}
+
+th, td {
+border: 1px solid #ffa6c9;
+padding: 12px;
+text-align: center;
+font-size: 16px;
+}
+
+th {
+background-color: #ffcce0;
+color: #5a003b;
+font-weight: bold;
+}
+
+h1, h2, h3 {
+color: #d63384;
+margin-bottom: 10px;
+transition: color 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover {
+color: #99004d;
+}
+
+ul, ol {
+padding-left: 40px;
+margin-bottom: 30px;
+}
+
+ul li, ol li {
+margin-bottom: 8px;
+transition: transform 0.3s;
+}
+
+ul li:hover, ol li:hover {
+transform: translateX(6px);
+font-weight: bold;
+}
+
+a {
+color: #cc0066;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+a:hover {
+color: #800040;
+text-decoration: underline;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.section-box {
+background-color: rgba(255, 255, 255, 0.85);
+border: 2px solid #ffcce0;
+border-radius: 15px;
+padding: 20px;
+margin: 20px auto;
+max-width: 800px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+animation: fadeIn 1s ease-in-out;
+transition: transform 0.3s ease;
+}
+
+.section-box:hover {
+transform: scale(1.01);
+}
+div{
+background-image: url('Cute\ Kawaii\ Nurse.jpeg');
+}
+.back-to-form {
+display: inline-block;
+margin: 30px auto;
+padding: 12px 25px;
+font-size: 1.1em;
+font-weight: 600;
+color: white;
+background: linear-gradient(135deg, #ff99cc, #cc66ff);
+border: none;
+border-radius: 10px;
+text-decoration: none;
+box-shadow: 0 6px 15px rgba(255, 182, 193, 0.4);
+transition: all 0.3s ease;
+animation: pulse 2.5s infinite ease-in-out;
+}
+
+.back-to-form:hover {
+background: linear-gradient(135deg, #ffb3d9, #d9b3ff);
+transform: translateY(-2px) scale(1.05);
+}
+@keyframes pulse {
+0%, 100% { transform: scale(1); }
+50% { transform: scale(1.03); }
+}
