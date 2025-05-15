@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Incio</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#"></a>Acerca de</li>
+        </ul>
+        <div class="formulario">
+            <h2>Registro de Usuario</h2>
+            <form id="registro-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña">
+
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept=".png, .jpg, .jpeg" onchange="mostrarImagen(event)">
+
+                <img id="ver-imagen" alt="vista previa de la iamgen" width="100" height="100">
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </nav>
+</body>
+</html>
